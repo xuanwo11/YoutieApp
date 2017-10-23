@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:layout_marginRight="0dp"
+    android:layout_marginLeft="150dp" >
+
+    <Button
+        android:id="@+id/layout_found"
+        style="@style/Smile.TextView._Black"
+        android:layout_width="match_parent"
+        android:background="@drawable/background_with_shadow"
+        android:padding = "10dp"
+        android:gravity="center"
+        android:text="主   页"
+        android:textColor="#0099cc"
+        android:textSize="24sp" 
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/base_horizontal_line" >
+    </View>
+
+    <Button
+        android:id="@+id/layout_lost"
+        style="@style/Smile.TextView._Black"
+        android:layout_gravity="right"
+        android:background="@drawable/video_recorder_start_btn"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="刷 新"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+</LinearLayout>

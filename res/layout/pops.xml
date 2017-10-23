@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+
+    
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/btn_address_list"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_above="@+id/btn_conversation"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/main_bottom_item_bg"
+            android:drawableTop="@drawable/tab_contact_list_bg"
+            android:onClick="onTabClicked"
+            android:paddingBottom="2dip"
+            android:paddingTop="7dip"
+            android:scaleType="matrix"
+            android:text="@string/address_book"
+            android:textColor="@color/main_botton_text_color"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_conversation"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="52dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/main_bottom_item_bg"
+            android:drawableTop="@drawable/tab_chat_bg"
+            android:onClick="onTabClicked"
+            android:paddingBottom="2dip"
+            android:paddingTop="7dip"
+            android:scaleType="matrix"
+            android:text="@string/session"
+            android:textColor="@color/main_botton_text_color"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_above="@+id/btn_address_list"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/main_bottom_item_bg"
+            android:drawableTop="@drawable/tab_setting_bg"
+            android:onClick="onTabClicked"
+            android:paddingBottom="2dip"
+            android:paddingTop="7dip"
+            android:scaleType="matrix"
+            android:text="@string/setting"
+            android:textColor="@color/main_botton_text_color"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

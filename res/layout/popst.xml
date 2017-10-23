@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_conversation"
+        style="@style/Smile.TextView._Black"
+        android:layout_width="match_parent"
+        android:background="@drawable/fen"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="主页"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_address_list"
+        style="@style/Smile.TextView._Black"
+        android:layout_width="match_parent"
+        android:background="@drawable/fen"
+        android:padding = "10dp"
+        android:gravity="center"
+        android:text="主页"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/base_horizontal_line" >
+    </View>
+
+    <Button
+        android:id="@+id/btn_setting"
+        style="@style/Smile.TextView._Black"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/fen"
+        android:gravity="center"
+        android:text="@string/lost"
+          android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+</LinearLayout>

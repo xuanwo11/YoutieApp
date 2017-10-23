@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/center_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aaffffff">
+ 
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/theme_color"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        >
+        <ImageView 
+            android:id="@+id/topbar_menu_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_top_bar_category"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            />
+        <TextView 
+            android:id="@+id/topbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="悠   贴"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            />
+         <ImageView 
+            android:id="@+id/topbar_menu_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_edit"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+        </RelativeLayout>
+ <include
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            layout="@layout/line"
+            android:layout_below="@+id/topbar" >
+        </include>
+ 
+    <RelativeLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"      
+        android:layout_weight="1"
+        android:layout_below="@id/topbar"
+        android:layout_marginBottom="52dp" 
+        android:background="#cccccc">
+         
+        
+</RelativeLayout>
+<RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom"
+        android:gravity="right" 
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_address_list"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_above="@+id/btn_conversation"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/main_bottom_item_bg"
+            android:drawableTop="@drawable/tab_contact_list_bg"
+            android:onClick="onTabClicked"
+            android:paddingBottom="2dip"
+            android:paddingTop="7dip"
+            android:scaleType="matrix"
+            android:text="@string/address_book"
+            android:textColor="@color/main_botton_text_color"
+            android:textSize="12sp" 
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_conversation"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="52dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1dp"
+            android:background="#339966"
+            android:drawableTop="@drawable/tab_chat_bg"
+            android:onClick="onTabClicked"
+            android:paddingBottom="2dip"
+            android:paddingTop="7dip"
+            android:scaleType="matrix"
+            android:text="@string/session"
+            android:textColor="@color/main_botton_text_color"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_above="@+id/btn_address_list"
+            android:layout_alignParentRight="true"
+            android:background="#339966"
+            android:drawableTop="@drawable/tab_setting_bg"
+            android:onClick="onTabClicked"
+            android:paddingBottom="2dip"
+            android:paddingTop="7dip"
+            android:scaleType="matrix"
+            android:text="@string/setting"
+            android:textColor="@color/main_botton_text_color"
+            android:textSize="12sp"
+             />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/layout_action"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#FFFFFF" >
+
+        <RelativeLayout
+            android:id="@+id/course_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/course_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_tabbar_course_normal" />
+
+                <TextView
+                    android:id="@+id/course_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="看帖"
+                    android:textColor="#7597B3" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/found_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/found_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_tabbar_found_normal" />
+
+                <TextView
+                    android:id="@+id/found_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="逛区"
+                    android:textColor="#7597B3" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/setting_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_tabbar_settings_normal" />
+
+                <TextView
+                    android:id="@+id/setting_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="个人"
+                    android:textColor="#7597B3" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/liaotian"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/liaotian_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/liaotian" />
+
+                <TextView
+                    android:id="@+id/liaotian_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="三体"
+                    android:textColor="#7597B3" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

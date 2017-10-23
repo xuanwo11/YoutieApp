@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dialog"
+    android:orientation="horizontal"
+     >
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etbackname"
+        android:layout_alignParentTop="true"
+        android:text="评论："
+        android:gravity="center"
+        android:textSize="16dp" 
+        android:textColor="#ffffff"
+        android:background="@color/green"/>
+
+    <EditText
+        android:id="@+id/etbackname"
+        android:layout_toRightOf="@id/tvname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="评论内容" />
+
+    <TextView
+        android:id="@+id/tvpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etcard"
+        android:layout_below="@id/etbackname"
+        android:text="昵称：" 
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textColor="#ffffff"
+        android:background="#cc3333"/>
+
+    <EditText
+        android:id="@+id/etcard"
+        android:layout_toRightOf="@id/tvpwd"
+        android:layout_below="@id/etbackname"       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:hint="你的昵称" />
+</RelativeLayout>

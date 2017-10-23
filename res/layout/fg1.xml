@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#FFD700"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#339966"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        >
+     <Button
+        android:id="@+id/btn_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_back_selector" />
+
+    
+
+    <TextView
+        android:id="@+id/title_bar_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/title_bar_menu_btn"
+        android:ellipsize="end"
+        android:gravity="center"        
+        android:singleLine="true"
+        android:text="看  图"
+        android:textColor="#ffffff"
+         android:layout_centerInParent="true"
+        android:textSize="22sp" />
+
+  </RelativeLayout>
+  
+    
+   <RelativeLayout
+     android:id="@+id/center"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_below="@+id/topbar"
+     android:layout_weight="1"
+     android:background="#cccccc"
+     android:gravity="left" >
+
+     <LinearLayout
+         android:id="@+id/llAdvertiseBoard"
+         android:layout_width="match_parent"
+         android:layout_height="188dip"
+         android:layout_marginTop="1dp"
+         android:orientation="vertical"
+         android:background="@drawable/a1" >
+
+     </LinearLayout>
+
+     <TextView
+         android:id="@+id/chahua"
+         android:layout_width="160dp"
+         android:layout_height="120dp"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/llAdvertiseBoard"
+         android:layout_margin="1dp"
+         android:alpha="1"
+         android:background="@drawable/bg_logout_normal"
+         android:text="插画"
+         android:textColor="#ffffff"
+         android:textSize="24dp" />
+
+     <Button
+         android:id="@+id/tuzhai"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_alignParentLeft="true"
+         
+         android:layout_margin="1dp"
+         android:layout_below="@+id/hangwu"      
+         android:alpha="1"
+         android:background="@drawable/hfp2"
+         android:text="图片壁纸，表情包"
+         android:textColor="#ffffff"
+         android:textSize="24dp" />
+
+     <TextView
+         android:id="@+id/hangwu"
+         android:layout_width="match_parent"
+         android:layout_height="120dp"
+         android:layout_alignParentRight="true"
+         android:layout_alignTop="@+id/chahua"
+         android:layout_margin="1dp"
+         android:layout_toRightOf="@+id/chahua"
+         android:alpha="1"
+         android:background="@drawable/bg_logout_normal"
+         android:text="校园"
+         android:textColor="#ffffff"
+         android:textSize="24dp" />
+
+     <ImageView
+         android:id="@+id/ch"
+         android:layout_width="160dp"
+         android:layout_height="100dp"
+         android:layout_alignBottom="@+id/chahua"
+         android:layout_alignTop="@+id/xy"
+         android:layout_marginRight="4dp"
+         android:layout_toLeftOf="@+id/hangwu"
+         android:alpha="1"
+         android:background="@drawable/fen" />
+
+     <ImageView
+         android:id="@+id/xy"
+         android:layout_width="160dp"
+         android:layout_height="90dp"
+         android:layout_alignBottom="@+id/chahua"
+         android:layout_alignParentRight="true"
+         android:layout_marginLeft="4dp" 
+         android:layout_marginRight="4dp" 
+                
+         android:layout_toRightOf="@+id/chahua"
+         android:alpha="1"
+         android:background="@drawable/fen" />
+
+ </RelativeLayout>
+
+</LinearLayout>

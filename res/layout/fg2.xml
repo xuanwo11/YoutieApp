@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#FFD700"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#339966"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        >
+     <Button
+        android:id="@+id/btn_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_back_selector" />
+
+    
+
+    <TextView
+        android:id="@+id/title_bar_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/title_bar_menu_btn"
+        android:ellipsize="end"
+        android:gravity="center"        
+        android:singleLine="true"
+        android:text="阅览区"
+        android:textColor="#ffffff"
+         android:layout_centerInParent="true"
+        android:textSize="22sp" />
+
+  </RelativeLayout>
+  
+    
+   <RelativeLayout
+     android:id="@+id/center"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_below="@+id/topbar"
+     android:layout_weight="1"
+     android:background="#cccccc"
+     android:gravity="left" >
+
+     <LinearLayout
+         android:id="@+id/llAdvertiseBoard"
+         android:layout_width="match_parent"
+         android:layout_height="188dip"
+         android:layout_marginTop="1dp"
+         android:orientation="vertical"
+         android:background="@drawable/youmo4" >
+
+     </LinearLayout>
+
+     <TextView
+         android:id="@+id/Button01"
+         android:layout_width="match_parent"
+         android:layout_height="100dp"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/llAdvertiseBoard"        
+         android:layout_margin="1dp"
+         android:layout_toLeftOf="@+id/Button02"
+         android:alpha="1"
+         android:background="@drawable/bg_logout_normal"
+         android:text="影   视"
+         android:textColor="#ffffff"
+         android:textSize="20dp" />
+ 
+ 
+     
+     <TextView
+         android:id="@+id/btnSelectImage"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_alignParentLeft="true"
+         android:layout_margin="1dp"
+         android:layout_below="@+id/hangwu"
+         android:layout_toLeftOf="@+id/youmou"
+         android:alpha="1"
+         android:background="@drawable/bg_logout_normal"
+         android:text="二次元"
+         android:textColor="#ffffff"
+         android:textSize="20dp" />
+
+     <TextView
+         android:id="@+id/Button02"
+         android:layout_width="match_parent"
+         android:layout_height="100dp"
+         android:layout_above="@+id/hangwu"
+         android:layout_alignParentRight="true"
+         android:layout_margin="1dp"
+         android:layout_alignTop="@+id/Button01"
+         android:layout_toRightOf="@+id/btnSelectImage"
+         android:alpha="1"
+         android:background="@drawable/bg_logout_normal"
+         android:text="科   技"
+         android:textColor="#ffffff"
+         android:textSize="20dp" />
+
+     <TextView
+         android:id="@+id/hangwu"
+         android:layout_width="match_parent"
+         android:layout_height="90dp"
+         android:layout_alignParentLeft="true"
+         android:layout_margin="1dp"
+         android:layout_below="@+id/Button01"
+         android:layout_toLeftOf="@+id/Button02"
+         android:alpha="1"
+         android:background="@drawable/bg_logout_normal"
+         android:text="航   武"
+         android:textColor="#ffffff"
+         android:textSize="20dp" />
+
+     <TextView
+         android:id="@+id/btnDownloadImage"
+         android:layout_width="match_parent"
+         android:layout_height="90dp"
+         android:layout_above="@+id/btnSelectImage"
+         android:layout_margin="1dp"
+         android:layout_alignLeft="@+id/Button02"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/Button01"
+         android:alpha="1"
+         android:background="@drawable/bg_logout_normal"
+         android:text="时   事"
+         android:textColor="#ffffff"
+         android:textSize="20dp" />
+
+     <TextView
+         android:id="@+id/youmou"
+         android:layout_width="160dp"
+         android:layout_height="match_parent"
+         android:layout_alignParentRight="true"
+         android:layout_margin="1dp"
+         android:layout_alignTop="@+id/btnSelectImage"
+         android:alpha="1"
+         android:background="@drawable/bg_logout_normal"
+         android:text="幽   默"
+         android:textColor="#ffffff"
+         android:textSize="20dp" />
+
+     <ImageView
+         android:id="@+id/ys"
+         android:layout_width="match_parent"
+         android:layout_height="72dp"
+         android:layout_above="@+id/hangwu"
+         android:layout_margin="4dp"
+         android:layout_toLeftOf="@+id/Button02"
+         android:alpha="1"
+         android:background="@drawable/fen" />
+
+     <ImageView
+         android:id="@+id/kj"
+         android:layout_width="match_parent"
+         android:layout_height="72dp"
+         android:layout_above="@+id/btnDownloadImage"
+         android:layout_alignLeft="@+id/Button02"
+         android:layout_margin="4dp"
+         android:alpha="1"
+         android:background="@drawable/fen" />
+
+     <ImageView
+         android:id="@+id/hw"
+         android:layout_width="match_parent"
+         android:layout_height="64dp"
+         android:layout_alignBottom="@+id/hangwu"
+         android:layout_margin="4dp"
+         android:layout_toLeftOf="@+id/youmou"
+         android:alpha="1"
+         android:background="@drawable/fen" />
+
+     <ImageView
+         android:id="@+id/ss"
+         android:layout_width="match_parent"
+         android:layout_height="64dp"
+         android:layout_above="@+id/btnSelectImage"
+         android:layout_alignParentRight="true"
+         android:layout_margin="4dp"
+         android:layout_toRightOf="@+id/hangwu"
+         android:alpha="1"
+         android:background="@drawable/fen" />
+
+     <ImageView
+         android:id="@+id/ym"
+         android:layout_width="match_parent"
+         android:layout_height="64dp"
+         android:layout_alignParentBottom="true"
+         android:layout_marginLeft="4dp"
+          android:layout_marginRight="4dp"
+         android:layout_toRightOf="@+id/btnSelectImage"
+         android:alpha="1"
+         android:background="@drawable/fen" />
+
+     <ImageView
+         android:id="@+id/ecy"
+         android:layout_width="match_parent"
+         android:layout_height="64dp"
+         android:layout_alignParentBottom="true"
+         android:layout_marginRight="4dp"
+          android:layout_marginLeft="4dp"
+         android:layout_toLeftOf="@+id/btnDownloadImage"
+         android:alpha="1"
+         android:background="@drawable/fen" />
+
+ </RelativeLayout>
+
+</LinearLayout>

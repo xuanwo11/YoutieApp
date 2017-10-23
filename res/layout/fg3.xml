@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#BDFCC9"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+       android:id="@+id/center"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/topbar"
+       android:layout_weight="1"
+       android:background="#cccccc"
+       android:gravity="left" >
+
+       <Button
+           android:id="@+id/llAdvertiseBoard"
+           android:layout_width="match_parent"
+           android:layout_height="200dip"
+           android:layout_marginTop="1dp"
+           android:background="@drawable/diqiu2"
+           android:orientation="vertical" 
+           android:layout_margin="0dp"/>
+       
+       <Button
+           android:id="@+id/Button02"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_above="@+id/Button03"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/llAdvertiseBoard"
+           android:layout_marginLeft="0dp"
+           android:layout_toLeftOf="@+id/Button01"
+           android:alpha="0.8"
+           android:background="@drawable/ppt"
+           android:drawableLeft="@drawable/dongman"
+           android:text="匿  名  图  贴"
+           android:textColor="#0099cc"
+           android:textSize="16dp" />
+
+       <Button
+           android:id="@+id/Button01"
+           android:layout_width="160dp"
+           android:layout_height="match_parent"
+           android:layout_above="@+id/Button04"
+           android:layout_alignParentRight="true"
+           android:layout_alignTop="@+id/Button02"
+           android:layout_marginRight="0dp"
+           android:alpha="0.8"
+           android:background="@drawable/ppt"
+           android:drawableLeft="@drawable/diqiu"
+           android:text="阅 览 区"
+           android:textColor="#0099cc"
+           android:textSize="16dp" />
+
+       <Button
+           android:id="@+id/Button03"
+           android:layout_width="match_parent"
+           android:layout_height="120dp"
+           android:layout_alignLeft="@+id/Button02"
+           android:layout_alignParentBottom="true"
+           android:layout_marginBottom="0dp"
+           android:layout_toLeftOf="@+id/Button04"
+           android:alpha="0.8"
+           android:background="@drawable/biji"
+           android:drawableLeft="@drawable/tx3"
+           android:text="看   图"
+           android:textColor="#0099cc"
+           android:textSize="16dp" />
+
+       <Button
+           android:id="@+id/Button04"
+           android:layout_width="160dp"
+           android:layout_height="120dp"
+           android:layout_alignLeft="@+id/Button01"
+           android:layout_alignTop="@+id/Button03"
+           android:alpha="0.8"
+           android:background="@drawable/biji"
+           android:drawableLeft="@drawable/tx2"
+           android:text="一  起  玩  吧"
+           android:textColor="#0099cc"
+           android:textSize="16dp" />
+
+      
+
+       
+
+       
+      
+   </RelativeLayout>
+
+</LinearLayout>

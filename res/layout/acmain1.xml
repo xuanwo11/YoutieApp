@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+    
+<RelativeLayout 
+    android:id="@+id/layout_action"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/base_action_bar_height"
+    android:background="#339966"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_back_selector" />
+    <LinearLayout
+        android:id="@+id/layout_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_lost"
+            style="@style/Smile.TextView._White"
+            android:text="下   载 "
+            android:textSize="22sp" />
+
+        
+            
+    </LinearLayout>
+
+    
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/path" 
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:text="@string/fileaddress2"
+        android:textSize="12sp" 
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_online_play"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:text="播 放" 
+        android:textColor="#ffffff"
+        android:background="@drawable/video_recorder_start_btn"
+        android:visibility="gone"/>
+<SeekBar
+        android:id="@+id/music_progress"
+        style="@style/StyleProgressBarMini"
+        android:background="@drawable/shape_progressbar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100" 
+        android:visibility="gone"/>
+
+<LinearLayout
+    android:id="@+id/bt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp" >
+
+    <Button
+        android:id="@+id/downloadbutton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/chat_send_btn_normal"
+        android:text="@string/button"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/stopbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/chat_send_btn_pressed"
+        android:enabled="false"
+        android:text="@string/stopbutton"
+        android:textColor="#ffffff" />
+</LinearLayout>
+
+<TextView
+    android:id="@+id/resultView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="10dp" />
+
+<ProgressBar
+    android:id="@+id/progressBar"
+    style="@style/StyleProgressBarMini"
+    android:background="@drawable/shape_progressbar_bg"
+    android:layout_width="match_parent"
+    android:layout_height="20dip" />
+
+ <pl.droidsonroids.gif.GifImageView
+     android:id="@+id/network_gifimageview"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center"
+     android:adjustViewBounds="true"
+     android:background="@drawable/gifw"
+     android:scaleType="centerInside" />
+
+</LinearLayout>

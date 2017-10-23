@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:padding="16dp"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/album_pic"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/pinglun"
+        android:drawableLeft="@drawable/bg_get_pic_big"
+        android:drawablePadding="12dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="相册"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+	<TextView
+	    android:id="@+id/camera_pic"
+	    android:layout_width="200dp"
+	    android:layout_height="60dp"
+	    android:background="@drawable/pinglun7"
+	    android:drawableLeft="@drawable/bg_take_pic_big"
+	    android:drawablePadding="12dp"
+	    android:layout_marginTop="30dp"
+	    android:gravity="center"
+	    android:padding="16dp"
+	    android:text="拍照"
+	    android:textColor="#ffffff"
+	    android:textSize="24sp" />
+	
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/two" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" 
+        >
+
+        <include
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            layout="@layout/line"
+            android:layout_below="@+id/title" >
+        </include>
+
+     <com.chen.photodemo.MyScrollView
+         android:id="@+id/scrollView"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_below="@+id/line" >
+
+        <LinearLayout android:id="@+id/mianContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </com.chen.photodemo.MyScrollView>
+
+         <TextView
+             android:id="@+id/title"
+             android:layout_width="wrap_content"
+             android:layout_height="50dp"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:gravity="center_vertical"
+             android:paddingLeft="20dp"
+             android:text="每周图摘"
+             android:textColor="#ffffff"
+             android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

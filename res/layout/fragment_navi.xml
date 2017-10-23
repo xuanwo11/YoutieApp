@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navi_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <LinearLayout
+        android:id="@+id/av"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#339966"
+        android:layout_alignParentRight="true"
+        android:alpha="1">
+ <ImageView
+     android:id="@+id/ivHead"
+     android:layout_width="108dp"
+     android:layout_height="108dp"
+     android:layout_alignParentRight="true"
+     android:layout_alignParentTop="true"
+     android:background="@drawable/theme" />
+ <TextView         
+            style="@style/navitext"
+            android:layout_width="108dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="48dp" 
+             android:layout_marginRight="48dp" 
+             android:background="@drawable/pinglunf"       
+            android:text="欢   迎   哦~"
+            android:drawablePadding="8dp"
+            android:textSize="16sp"
+            android:textColor="#ffffff" />
+</LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/av"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/hfp1"
+        android:gravity="top"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            layout="@layout/line" />
+       
+		<TextView
+            android:id="@+id/tv_navi_main"
+            style="@style/navitext"
+            android:layout_marginTop="6dp"
+            android:drawableLeft="@drawable/home"
+            android:text="主页"
+            android:drawablePadding="8dp"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/tv_navi_settings"
+            style="@style/navitext"
+            android:drawableLeft="@drawable/wdtz"
+            android:text="我的帖子"
+            android:drawablePadding="8dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tv_navi_feedback"
+            style="@style/navitext"
+            android:drawableLeft="@drawable/wdsc"
+            android:text="我的收藏" 
+            android:drawablePadding="8dp"
+            android:textColor="#FFFFFF"/>
+
+        
+
+        <TextView
+            android:id="@+id/tv_navi_about"
+            style="@style/navitext"
+            android:drawableLeft="@drawable/about"
+            android:text="版本信息"
+            android:drawablePadding="8dp"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+  
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="top"
+        android:orientation="vertical" >
+</LinearLayout>
+ 
+</RelativeLayout>
